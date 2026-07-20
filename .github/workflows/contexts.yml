@@ -3,5 +3,5 @@ on: push
 jobs:
   print:
     runs-on: ubuntu-latest
-    setps:
+    steps:
       - run: echo "${{ github.actor}}"
