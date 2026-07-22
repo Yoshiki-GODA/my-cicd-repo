@@ -8,4 +8,5 @@ jobs:
         env:
           CONTAINS_FUNC: ${{ contains('Hello World', 'ell') }}
           STARTS_WITH_FUNC: ${{ startsWith('Hello World', 'He') }}
-          ENDS_WITH_FUNC: ${{ endsWith('Hello World', 'ld') }}s
+          ENDS_WITH_FUNC: ${{ endsWith('Hello World', 'ld') }}
+          CONTAINS_FUNC_2: ${{ contains(github.event.issue.labels.*.name, 'bug') }}
